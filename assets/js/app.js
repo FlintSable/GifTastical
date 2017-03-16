@@ -3,9 +3,13 @@
 
 // display gifs in organized matter
 
-
-var queryURL = "http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
-var queryURL2 = "http://api.openweathermap.org/data/2.5/weather?q="
+var query_param = "Anime+Weather";
+var appID = "dc6zaTOxFJmzC"; // public
+var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query_param + "&api_key=" + appID;
+console.log(queryURL);
+var query_param1 = "Santa Monica";
+var appID2 = "ad2a32bbb65b8db270ee6f7c72514b20";
+var queryURL2 = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param1 + "&APPID=" + appID2;
 
 
 
@@ -13,6 +17,7 @@ var queryURL2 = "http://api.openweathermap.org/data/2.5/weather?q="
       url: queryURL,
       method: 'GET'
     }).done(function(response) {
+      console.log("GIPHY");  	
       console.log(response);
     });
 
@@ -20,6 +25,7 @@ var queryURL2 = "http://api.openweathermap.org/data/2.5/weather?q="
       url: queryURL2,
       method: 'GET'
     }).done(function(response) {
+      console.log("Weather");
       console.log(response);
     });
 
