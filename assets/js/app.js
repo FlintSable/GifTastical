@@ -8,7 +8,7 @@ var gifMachine = {
         'generative',
         'p5js',
         'processing',
-        'fluid simpulation',
+        'fluid simulation',
         '3d graphics',
         'loading',
         'adventure time'
@@ -44,18 +44,18 @@ var gifMachine = {
         });
 
 
-    },
+    }, 
 
     buttonGenerator: function() {
-        $('#buttons').empty();
+        $('#buttonGroup').empty();
         console.log(this.topics[3] + ' in the generator');
         for (i = 0; i < this.topics.length; i++) {
             var bttn = $('<button />', {
-                "class": 'abstract',
+                "class": 'abstract btn waves-effect',
                 "data-value": this.topics[i].replace(" ", "+"),
                 text: this.topics[i]
             });
-            $('#buttons').append(bttn);
+            $('#buttonGroup').append(bttn);
 
         }
     }
