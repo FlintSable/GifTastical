@@ -53,7 +53,6 @@ var gifMachine = {
 
 
 
-
 gifMachine.buttonGenerator();
 
 
