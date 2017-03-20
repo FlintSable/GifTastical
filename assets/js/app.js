@@ -77,7 +77,7 @@ $(document).on("click", ".abstract", function() {
 
     var query_param = $(this).attr("data-value");
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query_param + "&api_key=" + appID;
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query_param + "&api_key=" + appID;
     $(".abstract").removeClass("active");
 
 
