@@ -90,7 +90,7 @@ $(document).on("click", ".abstract", function() {
 
 
             for (var i = 0; i < returns.length; i++) {
-                var abstractDiv = $("<div class=\"abstract-item col s6 m4 l3\">");
+                var abstractDiv = $("<div class=\"abstract-item col s6 m4 l2\">");
 
                 var rating = returns[i].rating;
 
