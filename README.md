@@ -17,7 +17,7 @@ Utilizing the Giphy API
 #### Giphy Query App
 
 - Use Ajax calls to get giphy information though giphy api
-- Display the rating
+- Display the rating of the gif
 - Display 10 gifs about the subject selected
 
 
