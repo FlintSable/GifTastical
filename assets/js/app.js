@@ -87,8 +87,10 @@ $(document).on("click", ".abstract", function() {
         .done(function(response) {
             var returns = response.data;
 
+
+
             for (var i = 0; i < returns.length; i++) {
-                var abstractDiv = $("<div class=\"abstract-item\">");
+                var abstractDiv = $("<div class=\"abstract-item col s6 m4 l3\">");
 
                 var rating = returns[i].rating;
 
@@ -110,6 +112,7 @@ $(document).on("click", ".abstract", function() {
                 abstractDiv.append(abstractImage);
 
                 $(".gifGuts").append(abstractDiv);
+                
             }
         });
 });
