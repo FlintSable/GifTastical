@@ -94,10 +94,11 @@ $(document).on("click", ".abstract", function() {
 
                 var rating = returns[i].rating;
 
-                var p = $("<p>").text("Rating: " + rating);
 
                 var animation = returns[i].images.fixed_height.url;
                 var still = returns[i].images.fixed_height_still.url;
+                var p = $("<div class='chip pink accent-1'>").text("Rating: " + rating);
+
 
                 var abstractImage = $("<img>", {
                     'src': still,
